@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C9D15F9010EE77A07C394CC /* Pods_DoctorAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E2DDF4DE0C4B93D9F95279 /* Pods_DoctorAppTests.framework */; };
+		65064C4AC74F7AFF97FCBE5A /* Pods_DoctorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC324FD6E27D3C5DB066B56 /* Pods_DoctorApp.framework */; };
+		A72EC6B764D0ABF01DCD9D70 /* Pods_DoctorApp_DoctorAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF23649D39EF648BD5E90A /* Pods_DoctorApp_DoctorAppUITests.framework */; };
+		CE097FDA2A73F52D0096D1D2 /* DetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE097FD92A73F52D0096D1D2 /* DetailViewViewController.swift */; };
+		CE331F072A6E66D00083D7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE331F062A6E66D00083D7B9 /* AppDelegate.swift */; };
+		CE331F092A6E66D00083D7B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE331F082A6E66D00083D7B9 /* SceneDelegate.swift */; };
+		CE331F0B2A6E66D00083D7B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE331F0A2A6E66D00083D7B9 /* ViewController.swift */; };
+		CE331F0E2A6E66D00083D7B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE331F0C2A6E66D00083D7B9 /* Main.storyboard */; };
+		CE331F102A6E66D20083D7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE331F0F2A6E66D20083D7B9 /* Assets.xcassets */; };
+		CE331F132A6E66D20083D7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE331F112A6E66D20083D7B9 /* LaunchScreen.storyboard */; };
+		CE331F1E2A6E66D20083D7B9 /* DoctorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE331F1D2A6E66D20083D7B9 /* DoctorAppTests.swift */; };
+		CE331F282A6E66D20083D7B9 /* DoctorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE331F272A6E66D20083D7B9 /* DoctorAppUITests.swift */; };
+		CE331F2A2A6E66D20083D7B9 /* DoctorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE331F292A6E66D20083D7B9 /* DoctorAppUITestsLaunchTests.swift */; };
+		CEAC84602A6E87D200B6753E /* PatientViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC845E2A6E87D200B6753E /* PatientViewTableViewCell.swift */; };
+		CEAC84612A6E87D200B6753E /* PatientViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC845F2A6E87D200B6753E /* PatientViewTableViewCell.xib */; };
+		CEAC84632A6E8BFD00B6753E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEAC84622A6E8BFD00B6753E /* GoogleService-Info.plist */; };
+		CEAC84672A6FCAC000B6753E /* PatientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC84662A6FCAC000B6753E /* PatientInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE331F1A2A6E66D20083D7B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE331EFB2A6E66D00083D7B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE331F022A6E66D00083D7B9;
+			remoteInfo = DoctorApp;
+		};
+		CE331F242A6E66D20083D7B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE331EFB2A6E66D00083D7B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE331F022A6E66D00083D7B9;
+			remoteInfo = DoctorApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D44E55999B770C500220B70 /* Pods-DoctorApp-DoctorAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorApp-DoctorAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DoctorApp-DoctorAppUITests/Pods-DoctorApp-DoctorAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1BCF23649D39EF648BD5E90A /* Pods_DoctorApp_DoctorAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorApp_DoctorAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F3E28AF25C2F29824EA6B5 /* Pods-DoctorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorApp.release.xcconfig"; path = "Target Support Files/Pods-DoctorApp/Pods-DoctorApp.release.xcconfig"; sourceTree = "<group>"; };
+		25E2DDF4DE0C4B93D9F95279 /* Pods_DoctorAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAF4617A6A67B2DAA154C18 /* Pods-DoctorAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorAppTests.release.xcconfig"; path = "Target Support Files/Pods-DoctorAppTests/Pods-DoctorAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B783BAB9435435FB1EB07D61 /* Pods-DoctorApp-DoctorAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorApp-DoctorAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DoctorApp-DoctorAppUITests/Pods-DoctorApp-DoctorAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BAC324FD6E27D3C5DB066B56 /* Pods_DoctorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C791A4BCA44CA61017622AB8 /* Pods-DoctorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorApp.debug.xcconfig"; path = "Target Support Files/Pods-DoctorApp/Pods-DoctorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CE097FD92A73F52D0096D1D2 /* DetailViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewViewController.swift; sourceTree = "<group>"; };
+		CE331F032A6E66D00083D7B9 /* DoctorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE331F062A6E66D00083D7B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE331F082A6E66D00083D7B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE331F0A2A6E66D00083D7B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE331F0D2A6E66D00083D7B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE331F0F2A6E66D20083D7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE331F122A6E66D20083D7B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE331F142A6E66D20083D7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE331F192A6E66D20083D7B9 /* DoctorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE331F1D2A6E66D20083D7B9 /* DoctorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppTests.swift; sourceTree = "<group>"; };
+		CE331F232A6E66D20083D7B9 /* DoctorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE331F272A6E66D20083D7B9 /* DoctorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppUITests.swift; sourceTree = "<group>"; };
+		CE331F292A6E66D20083D7B9 /* DoctorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEAC845E2A6E87D200B6753E /* PatientViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewTableViewCell.swift; sourceTree = "<group>"; };
+		CEAC845F2A6E87D200B6753E /* PatientViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientViewTableViewCell.xib; sourceTree = "<group>"; };
+		CEAC84622A6E8BFD00B6753E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEAC84662A6FCAC000B6753E /* PatientInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientInfo.swift; sourceTree = "<group>"; };
+		F150CA20CC75630A559A7CC9 /* Pods-DoctorAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DoctorAppTests/Pods-DoctorAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE331F002A6E66D00083D7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65064C4AC74F7AFF97FCBE5A /* Pods_DoctorApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE331F162A6E66D20083D7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9D15F9010EE77A07C394CC /* Pods_DoctorAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE331F202A6E66D20083D7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72EC6B764D0ABF01DCD9D70 /* Pods_DoctorApp_DoctorAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB4B9C45A62D5F277B1322D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAC324FD6E27D3C5DB066B56 /* Pods_DoctorApp.framework */,
+				1BCF23649D39EF648BD5E90A /* Pods_DoctorApp_DoctorAppUITests.framework */,
+				25E2DDF4DE0C4B93D9F95279 /* Pods_DoctorAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		528A5F9A39DB1072A5EB2BF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C791A4BCA44CA61017622AB8 /* Pods-DoctorApp.debug.xcconfig */,
+				22F3E28AF25C2F29824EA6B5 /* Pods-DoctorApp.release.xcconfig */,
+				0D44E55999B770C500220B70 /* Pods-DoctorApp-DoctorAppUITests.debug.xcconfig */,
+				B783BAB9435435FB1EB07D61 /* Pods-DoctorApp-DoctorAppUITests.release.xcconfig */,
+				F150CA20CC75630A559A7CC9 /* Pods-DoctorAppTests.debug.xcconfig */,
+				3DAF4617A6A67B2DAA154C18 /* Pods-DoctorAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE331EFA2A6E66D00083D7B9 = {
+			isa = PBXGroup;
+			children = (
+				CE331F052A6E66D00083D7B9 /* DoctorApp */,
+				CE331F1C2A6E66D20083D7B9 /* DoctorAppTests */,
+				CE331F262A6E66D20083D7B9 /* DoctorAppUITests */,
+				CE331F042A6E66D00083D7B9 /* Products */,
+				528A5F9A39DB1072A5EB2BF7 /* Pods */,
+				0EB4B9C45A62D5F277B1322D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE331F042A6E66D00083D7B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE331F032A6E66D00083D7B9 /* DoctorApp.app */,
+				CE331F192A6E66D20083D7B9 /* DoctorAppTests.xctest */,
+				CE331F232A6E66D20083D7B9 /* DoctorAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE331F052A6E66D00083D7B9 /* DoctorApp */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC84622A6E8BFD00B6753E /* GoogleService-Info.plist */,
+				CE331F062A6E66D00083D7B9 /* AppDelegate.swift */,
+				CE331F082A6E66D00083D7B9 /* SceneDelegate.swift */,
+				CE331F0A2A6E66D00083D7B9 /* ViewController.swift */,
+				CE097FD92A73F52D0096D1D2 /* DetailViewViewController.swift */,
+				CE331F0C2A6E66D00083D7B9 /* Main.storyboard */,
+				CE331F0F2A6E66D20083D7B9 /* Assets.xcassets */,
+				CE331F112A6E66D20083D7B9 /* LaunchScreen.storyboard */,
+				CE331F142A6E66D20083D7B9 /* Info.plist */,
+				CEAC845E2A6E87D200B6753E /* PatientViewTableViewCell.swift */,
+				CEAC845F2A6E87D200B6753E /* PatientViewTableViewCell.xib */,
+				CEAC84662A6FCAC000B6753E /* PatientInfo.swift */,
+			);
+			path = DoctorApp;
+			sourceTree = "<group>";
+		};
+		CE331F1C2A6E66D20083D7B9 /* DoctorAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE331F1D2A6E66D20083D7B9 /* DoctorAppTests.swift */,
+			);
+			path = DoctorAppTests;
+			sourceTree = "<group>";
+		};
+		CE331F262A6E66D20083D7B9 /* DoctorAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE331F272A6E66D20083D7B9 /* DoctorAppUITests.swift */,
+				CE331F292A6E66D20083D7B9 /* DoctorAppUITestsLaunchTests.swift */,
+			);
+			path = DoctorAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE331F022A6E66D00083D7B9 /* DoctorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE331F2D2A6E66D20083D7B9 /* Build configuration list for PBXNativeTarget "DoctorApp" */;
+			buildPhases = (
+				C09C407D6BCDDA7344B5D168 /* [CP] Check Pods Manifest.lock */,
+				CE331EFF2A6E66D00083D7B9 /* Sources */,
+				CE331F002A6E66D00083D7B9 /* Frameworks */,
+				CE331F012A6E66D00083D7B9 /* Resources */,
+				348FC9C607A99C72E08C635B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoctorApp;
+			productName = DoctorApp;
+			productReference = CE331F032A6E66D00083D7B9 /* DoctorApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE331F182A6E66D20083D7B9 /* DoctorAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE331F302A6E66D20083D7B9 /* Build configuration list for PBXNativeTarget "DoctorAppTests" */;
+			buildPhases = (
+				434409B9112B9CC047467715 /* [CP] Check Pods Manifest.lock */,
+				CE331F152A6E66D20083D7B9 /* Sources */,
+				CE331F162A6E66D20083D7B9 /* Frameworks */,
+				CE331F172A6E66D20083D7B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE331F1B2A6E66D20083D7B9 /* PBXTargetDependency */,
+			);
+			name = DoctorAppTests;
+			productName = DoctorAppTests;
+			productReference = CE331F192A6E66D20083D7B9 /* DoctorAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE331F222A6E66D20083D7B9 /* DoctorAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE331F332A6E66D20083D7B9 /* Build configuration list for PBXNativeTarget "DoctorAppUITests" */;
+			buildPhases = (
+				27C29B391FDE0FEBF5752C75 /* [CP] Check Pods Manifest.lock */,
+				CE331F1F2A6E66D20083D7B9 /* Sources */,
+				CE331F202A6E66D20083D7B9 /* Frameworks */,
+				CE331F212A6E66D20083D7B9 /* Resources */,
+				AD1C095D038BE4ADECEDF1D0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE331F252A6E66D20083D7B9 /* PBXTargetDependency */,
+			);
+			name = DoctorAppUITests;
+			productName = DoctorAppUITests;
+			productReference = CE331F232A6E66D20083D7B9 /* DoctorAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE331EFB2A6E66D00083D7B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CE331F022A6E66D00083D7B9 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CE331F182A6E66D20083D7B9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CE331F022A6E66D00083D7B9;
+					};
+					CE331F222A6E66D20083D7B9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CE331F022A6E66D00083D7B9;
+					};
+				};
+			};
+			buildConfigurationList = CE331EFE2A6E66D00083D7B9 /* Build configuration list for PBXProject "DoctorApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE331EFA2A6E66D00083D7B9;
+			productRefGroup = CE331F042A6E66D00083D7B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE331F022A6E66D00083D7B9 /* DoctorApp */,
+				CE331F182A6E66D20083D7B9 /* DoctorAppTests */,
+				CE331F222A6E66D20083D7B9 /* DoctorAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE331F012A6E66D00083D7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC84612A6E87D200B6753E /* PatientViewTableViewCell.xib in Resources */,
+				CE331F132A6E66D20083D7B9 /* LaunchScreen.storyboard in Resources */,
+				CEAC84632A6E8BFD00B6753E /* GoogleService-Info.plist in Resources */,
+				CE331F102A6E66D20083D7B9 /* Assets.xcassets in Resources */,
+				CE331F0E2A6E66D00083D7B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE331F172A6E66D20083D7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE331F212A6E66D20083D7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27C29B391FDE0FEBF5752C75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoctorApp-DoctorAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		348FC9C607A99C72E08C635B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorApp/Pods-DoctorApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorApp/Pods-DoctorApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoctorApp/Pods-DoctorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		434409B9112B9CC047467715 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoctorAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD1C095D038BE4ADECEDF1D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorApp-DoctorAppUITests/Pods-DoctorApp-DoctorAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorApp-DoctorAppUITests/Pods-DoctorApp-DoctorAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoctorApp-DoctorAppUITests/Pods-DoctorApp-DoctorAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C09C407D6BCDDA7344B5D168 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoctorApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE331EFF2A6E66D00083D7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC84602A6E87D200B6753E /* PatientViewTableViewCell.swift in Sources */,
+				CE331F0B2A6E66D00083D7B9 /* ViewController.swift in Sources */,
+				CE331F072A6E66D00083D7B9 /* AppDelegate.swift in Sources */,
+				CEAC84672A6FCAC000B6753E /* PatientInfo.swift in Sources */,
+				CE097FDA2A73F52D0096D1D2 /* DetailViewViewController.swift in Sources */,
+				CE331F092A6E66D00083D7B9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE331F152A6E66D20083D7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE331F1E2A6E66D20083D7B9 /* DoctorAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE331F1F2A6E66D20083D7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE331F282A6E66D20083D7B9 /* DoctorAppUITests.swift in Sources */,
+				CE331F2A2A6E66D20083D7B9 /* DoctorAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE331F1B2A6E66D20083D7B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE331F022A6E66D00083D7B9 /* DoctorApp */;
+			targetProxy = CE331F1A2A6E66D20083D7B9 /* PBXContainerItemProxy */;
+		};
+		CE331F252A6E66D20083D7B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE331F022A6E66D00083D7B9 /* DoctorApp */;
+			targetProxy = CE331F242A6E66D20083D7B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE331F0C2A6E66D00083D7B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE331F0D2A6E66D00083D7B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE331F112A6E66D20083D7B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE331F122A6E66D20083D7B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE331F2B2A6E66D20083D7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE331F2C2A6E66D20083D7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE331F2E2A6E66D20083D7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C791A4BCA44CA61017622AB8 /* Pods-DoctorApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = STV2VP7XA6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DoctorApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Olacabs Stage";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE331F2F2A6E66D20083D7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F3E28AF25C2F29824EA6B5 /* Pods-DoctorApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = STV2VP7XA6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DoctorApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Olacabs Stage";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE331F312A6E66D20083D7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F150CA20CC75630A559A7CC9 /* Pods-DoctorAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = conan.DoctorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoctorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoctorApp";
+			};
+			name = Debug;
+		};
+		CE331F322A6E66D20083D7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAF4617A6A67B2DAA154C18 /* Pods-DoctorAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = conan.DoctorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoctorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoctorApp";
+			};
+			name = Release;
+		};
+		CE331F342A6E66D20083D7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D44E55999B770C500220B70 /* Pods-DoctorApp-DoctorAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = conan.DoctorAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoctorApp;
+			};
+			name = Debug;
+		};
+		CE331F352A6E66D20083D7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B783BAB9435435FB1EB07D61 /* Pods-DoctorApp-DoctorAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = conan.DoctorAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoctorApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE331EFE2A6E66D00083D7B9 /* Build configuration list for PBXProject "DoctorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE331F2B2A6E66D20083D7B9 /* Debug */,
+				CE331F2C2A6E66D20083D7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE331F2D2A6E66D20083D7B9 /* Build configuration list for PBXNativeTarget "DoctorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE331F2E2A6E66D20083D7B9 /* Debug */,
+				CE331F2F2A6E66D20083D7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE331F302A6E66D20083D7B9 /* Build configuration list for PBXNativeTarget "DoctorAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE331F312A6E66D20083D7B9 /* Debug */,
+				CE331F322A6E66D20083D7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE331F332A6E66D20083D7B9 /* Build configuration list for PBXNativeTarget "DoctorAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE331F342A6E66D20083D7B9 /* Debug */,
+				CE331F352A6E66D20083D7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE331EFB2A6E66D00083D7B9 /* Project object */;
+}

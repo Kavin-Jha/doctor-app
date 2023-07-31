@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1004693421257-82kei57em57fv83h6qne6ip8q9sesld6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1004693421257-82kei57em57fv83h6qne6ip8q9sesld6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAQ6Un0xvGoEvs5DMwbIuNIlF69ZIKw5Vc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1004693421257</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string></string>
+	<key>PROJECT_ID</key>
+	<string>patient-details-app-ac065</string>
+	<key>STORAGE_BUCKET</key>
+	<string>patient-details-app-ac065.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1004693421257:ios:552f619c69bbd7b06d2118</string>
+	<key>DATABASE_URL</key>
+	<string>https://patient-details-app-ac065-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>
